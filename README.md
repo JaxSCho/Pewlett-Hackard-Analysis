@@ -19,9 +19,9 @@ To determine the number of retiring employees per title, we initially created a 
 
 <b>Fig.1 - Retiring Employees Per Title </b>
 
-To identify employees who are eligible to participate in a mentorship program, we created a mentorship eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965. Figure 2 shows a snapshot of current employees eligible to participate in the mentorship program.
+To identify employees who are eligible to participate in a mentorship program, we created a mentorship eligibility table that holds the current employees who were born in 1965. Figure 2 shows a snapshot of current employees eligible to participate in the mentorship program.
 
-![image](https://user-images.githubusercontent.com/99936542/163748337-a55a4892-07e9-4325-8a86-717d9caf996e.png)
+![image](https://user-images.githubusercontent.com/99936542/163753291-59ee550a-0520-43e8-8090-e3093904291b.png)
 
 <b>Fig.2 - Snapshot of Employees Eligible for Mentorship Program </b>
 
@@ -46,7 +46,12 @@ Below are two additional queries or tables that may provide more insight into th
 
 1. Employees eligible for the mentorship program by title -- This query helps us understand the job title breakdown of potential mentors based on the current eligibility criteria.
 
-2. Current employess with senior-level roles not eligible for retirement - Expanding the mentorship program eligibility criteria to include more current employees with senior-level positions in the company can help minimize the impact of the "silver tsunami".
+![image](https://user-images.githubusercontent.com/99936542/163752034-3469ddcd-8a6b-4711-9ad4-2854d8385848.png)
+
+2. Current employees with senior-level roles not eligible for retirement - Expanding the mentorship program eligibility criteria to include more current employees with senior-level positions in the company can help minimize the impact of the "silver tsunami".
+
+![image](https://user-images.githubusercontent.com/99936542/163752739-e00f757a-53b5-4395-bdac-f025bd4df592.png)
+
 
 ## Resources
 - Data Sources: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv

@@ -2,7 +2,7 @@
 -- Deliverable 1: The Number of Retiring Employees by Title --
 --------------------------------------------------------------
 
--- Retrieve employee and title information born between 1952 and 1955
+-- Retrieve employee and title information born between 1952 and 1955 
 SELECT e.emp_no, 
 	e.first_name, 
 	e.last_name,
@@ -16,7 +16,7 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
 
--- Distinct employee info and current title information
+-- Distinct employee info and current title information -- 72,458
 SELECT DISTINCT ON (emp_no) emp_no, 
 	first_name, 
 	last_name,
@@ -37,21 +37,20 @@ ORDER BY count desc;
 -- Deliverable 2: The Employees Eligible for the Mentorship Program --
 ----------------------------------------------------------------------
 
-SELECT DISTINCT ON (e.emp_no) e.emp_no, 
+SELECT DISTINCT ON (e.emp_no) e.emp_no, -- 1,549
 	e.first_name, 
 	e.last_name,
 	e.birth_date,
 	de.from_date,
 	de.to_date,
 	t.title
---INTO mentorship_elibility 
+--INTO mentorship_eligibility 
 FROM employees AS e
 INNER JOIN dept_emp AS de
 ON (e.emp_no = de.emp_no)
 INNER JOIN titles AS t
-ON (e.emp_no = t.emp_no)
+ON (e.emp_no = t.emp_no) and t.to_date = '9999-01-01'
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31') 
-	AND (t.to_date = '9999-01-01')
+	AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
-
 
