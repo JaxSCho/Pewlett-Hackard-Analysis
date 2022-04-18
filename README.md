@@ -2,7 +2,7 @@
 ## Overview of Project
 ### Purpose
 
-Based on Pewlett Hackard's 6 employee information CSVS, we were able to help Bobby build an employee database in SQL. Now Bobby's manager has requested some additional information:
+Based on Pewlett Hackard's 6 employee information CSVs, we were able to help Bobby build an employee database in SQL. Now, Bobby's manager has requested some additional information:
 
 1. Determine the number of retiring employees per title
 2. Identify employees who are eligible to participate in a mentorship program.
@@ -27,8 +27,8 @@ To identify employees who are eligible to participate in a mentorship program, w
 
 Based on the two analysis deliverables described above,
 
-- About 30% of the all employees who are currently employed at Pewlett Hackhard are born between 1952 and 1955 and therefore, eligible to retire (i.e. 72,458 out of 240,124 total current employees)
-- About 70% of the employees eligible to retire hold senior-level job titles (i.e. Senior Engineer or Senior Staff) at Pewlett Hackhard.
+- About 30% of the all employees who are currently employed at Pewlett Hackhard are born between 1952 and 1955 and therefore, eligible to retire (i.e., 72,458 out of 240,124 total current employees).
+- About 70% of the employees eligible to retire hold senior-level job titles (i.e., Senior Engineer or Senior Staff) at Pewlett Hackhard.
 - There are only 2 current managers eligible to retire.
 - There are 1,549 unique employees who are currently employed at Pewlett Hackhard and who were born in 1965 and therefore, eligible to participate in the mentorship program.
 
@@ -44,7 +44,7 @@ No, there will not be enough qualified, retirement-ready employees in the depart
 
 Below are two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
-1. Employees eligible for the mentorship program by Title -- This query helps us understand the job title breakdown of potential mentors based on the current eligibility criteria.
+1. Employees eligible for the mentorship program by title -- This query helps us understand the job title breakdown of potential mentors based on the current eligibility criteria.
 
 2. Current employess with senior-level roles not eligible for retirement - Expanding the mentorship program eligibility criteria to include more current employees with senior-level positions in the company can help minimize the impact of the "silver tsunami".
 
